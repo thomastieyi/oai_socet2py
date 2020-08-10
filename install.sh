@@ -1,4 +1,5 @@
 #!/bin/sh
+git clone https://github.com/DaveGamble/cJSON.git
 mkdir build
 cd build
 echo "compling cJSON"
