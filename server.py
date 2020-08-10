@@ -16,8 +16,9 @@ hot_point_socket.listen(5)
 to_client, addr = hot_point_socket.accept()
 print ('...connected from :', addr)
 i=0
-while i<=10:
+while True:
     data = to_client.recv(800)
+    print(i)
     print(data)
     to_client.send(data)
     i+=1
