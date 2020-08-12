@@ -28,9 +28,9 @@ cJSON *soctet_to_py(cJSON *json_to_sent, int sockfd)
         buf[j] = json_data[j];
     }
     n = strlen(json_data);
-     printf("Rsent: %s\n", json_data);
+   //  printf("Rsent: %s\n", json_data);
     write(sockfd, json_data, n);
-    read(sockfd, buf, MAXLINE);
+   read(sockfd, buf, MAXLINE);
     cJSON *res = cJSON_Parse(buf);
     return res;
 };
