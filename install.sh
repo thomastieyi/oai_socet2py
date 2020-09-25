@@ -1,7 +1,6 @@
 #!/bin/sh
-if [ ! -d "cJSON"]; then
 git clone https://github.com/DaveGamble/cJSON.git
-fi
+
 
 mkdir build
 cd build
